@@ -1,0 +1,11 @@
+app:
+    path: /
+    defaults: { _controller:AppBundle:Default:index }
+
+saludopersonal:
+    path: /saludo/ {name}
+    defaults: { _controller:AppBundle:Saludo:saludo }
+    
+saludo:
+    path: /saludo/
+    defaults: { _controller:AppBundle:Saludo:sinParam }

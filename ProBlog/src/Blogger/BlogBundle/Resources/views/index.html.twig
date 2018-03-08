@@ -2,8 +2,8 @@
 
 {% block body %}
     {% for blog in blogs%}
-      <li>{{blog.title}}</li>
-      <img src="{{asset(["images/",blog.image]|join)}}" />
+      <h2>{{blog.title}}</h2>
+      <img style="width: 100%" src="{{asset(["images/",blog.image]|join)}}" />
         <div class="snippet">
           <p>{{blog.blog(500)}}</p>
           <p class="continue"><a href="{{path("show",{"id":blog.id})}}">Continue</a>
